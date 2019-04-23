@@ -1,0 +1,15 @@
+<div class="mat-typography drinkers" fxLayout="column" fxLayoutAlign="start stretch" fxFlex="auto" fxFlex.gt-sm="900px" fxLayoutGap="24px">
+    <mat-card *ngFor="let drinker of drinkers" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="24px">
+      <h1 fxFlex="33%">{{drinker.firstName}}</h1>
+      <h3><mat-icon color="primary">local_drink</mat-icon>{{drinker.beersOwed}}</h3>
+      <div fxLayoutGap="10px">
+        <button (click)="addBeer(drinker)"><h1>+</h1></button>
+        <button (click)="subtractBeer(drinker)"><h1>-</h1></button>
+      </div>
+<!--       <div fxFlex="10">
+          <button mat-icon-button color="warn" (click)="delete(drinker.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+      </div> -->
+    </mat-card>
+  </div>

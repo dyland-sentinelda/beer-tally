@@ -1,0 +1,13 @@
+@import '../../angular-material.theme';
+
+.drinkers mat-card {
+    //background-color: mat-color($beer-tally-app-primary) !important;
+    padding-bottom: 0px;
+    @include mat-elevation(7);
+    border-radius: 0px;
+    //border: 1px solid black;
+}
+
+.drinkers {
+    margin: 16px;
+}

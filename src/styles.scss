@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import '_angular-material.theme.scss';
+
+body {
+    background-color: #D8AF47;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    outline: none;
+}
+
+.title {
+    margin: 16px !important;
+}
