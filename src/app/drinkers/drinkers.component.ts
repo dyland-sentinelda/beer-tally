@@ -42,4 +42,8 @@ export class DrinkersComponent implements OnInit {
   delete(id: string) {
     this.drinkerService.deleteDrinker(id);
   }
+
+  owesBeer(beersOwed: number): boolean {
+    return beersOwed > 0;
+  }
 }
